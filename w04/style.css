@@ -1,0 +1,75 @@
+#grid {
+  width:400px;
+  height:400px;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.cell {
+  background-color:lightskyblue;
+}
+
+.occupied {
+  background-color: white;
+}
+
+.x {
+  background-image: url('x.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.o {
+  background-image: url('o.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cell:nth-child(1) {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.cell:nth-child(2) {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.cell:nth-child(3) {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.cell:nth-child(4) {
+  border-top: 1px solid black;  
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.cell:nth-child(5) {
+  border: 1px solid black;  
+}
+
+.cell:nth-child(6) {
+  border-top: 1px solid black;  
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.cell:nth-child(7) {
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.cell:nth-child(8) {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.cell:nth-child(9) {
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
